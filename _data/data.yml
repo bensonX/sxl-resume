@@ -7,13 +7,13 @@ sidebar:
   education:  True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: 张西超
+  name: 商贤楼
   tagline: Android App 开发工程师
   avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   weixin: qdzxcbp
-  phone: 13032956307
+  phone: 13063860140
   email: zhangxichao100@gmail.com
   # linkedin: alandoe
   github: Seachal # do not add http://github.com  e.g. Seahcal
