@@ -1,0 +1,43 @@
+{% assign projects = site.data.data.projects %}
+{% if projects %}
+<section class="section projects-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ projects.title }}
+  </h2>
+
+  {% if projects.intro %}
+  <div class="intro">
+      <p>{{ projects.intro }}</p>
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for project in projects.assignments %}
+    <div class="item">
+
+      <!--<span class="project-title">-->
+        <!--&lt;!&ndash;注释掉项目链接&ndash;&gt;-->
+        <!--&lt;!&ndash;<a href="{{ project.link }}">{{ project.title }}</a>&ndash;&gt;-->
+          <!--{{ project.title }}-->
+      <!--</span>-->
+
+      <span class="project-title-name">
+        <!--注释掉项目链接-->
+        <!--<a href="{{ project.link }}">{{ project.title }}</a>-->
+          {{ project.title }}
+      </span>
+
+
+      {% if project.tagline %}
+      - <span class="project-tagline">{{ project.tagline }}</span>
+      {% endif %}
+
+    </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
